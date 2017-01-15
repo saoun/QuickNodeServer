@@ -8,7 +8,7 @@ function node_touch(){
     cd $1
     mkdir client
       mkdir client/views
-        echo -e '<!doctype html>\n<html>\n<head>\n  <link href="/css/style.css" rel="stylesheet" type="text/css">\n</head>\n<body>\n  <div class="container">\n    "Hello World."\n  </div>\n</body>\n</html>\n<script src="/js/jquery.js" type="text/javascript"></script>\n<script src="/js/script.js" type="text/javascript"></script>' > client/views/index.html
+        echo -e '<!doctype html>\n<html>\n<head>\n  <link href="stylesheets/style.css" rel="stylesheet" type="text/css">\n</head>\n<body>\n  <div class="container">\n    "Hello World."\n  </div>\n</body>\n</html>\n<script src="javascript/jquery.js" type="text/javascript"></script>\n<script src="javascript/script.js" type="text/javascript"></script>' > client/views/index.html
       mkdir client/public
         mkdir client/public/img
         mkdir client/public/stylesheets
@@ -35,7 +35,7 @@ var mustache = require("mustache-express");
 app.engine("html",mustache());
 app.set("view engine", "html");
 app.set("views", __dirname+"/../client/views");
-app.use("/public", express.static(__dirname+"/../client/public"));
+app.use("/", express.static(__dirname+"/../client/public"));
 
 //Define the port
 var port = 8080;
