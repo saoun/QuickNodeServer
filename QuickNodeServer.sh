@@ -28,7 +28,6 @@ function node_touch(){
           echo -e '"use strict";\n(function(){\n\n})();' > client/public/javascript/script.js
     # mkdir server
     mkdir server
-      # echo -e ''
       printf
       'var express = require("express");
       var app = express();
