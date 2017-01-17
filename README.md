@@ -19,11 +19,11 @@ First, the script will create a file structure
 Then, it will run the following commends on your Terminal:
 ``npm init`` which will initialize npm in the directory created. Follow the questions asked
 and answer as need. Then, it will install the following packages to run Express and Nodemon:
-``npm install express --save``
-``npm install mustache-express --save``
-``npm install nodemon --save``
+``npm install express --save`` <br>
+``npm install mustache-express --save`` <br>
+``npm install nodemon --save`` <br>
 
 ## Extras
 Once sublime opens, head to Package.json. On line 6 for "scripts", add:
-``"start": "nodemon server/server.js"``
+``"start": "nodemon server/server.js"`` <br>
 This will allow you to start the server from your Terminal and run Nodemon by typing ``npm start``.
