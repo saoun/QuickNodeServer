@@ -5,12 +5,25 @@ This is a command line shortcut to set up a node server and associated directori
 ## How to use:
 
 - Open QuickNodeServer.sh
-- Select All and Copy
+- Select All, and Copy
 - Open Terminal on your Mac
-- Open your bash_profile (subl ~/.bash_profile)
+- Open your bash_profile (``subl ~/.bash_profile``)
 - Paste the code (anywhere, though best at the bottom)
 - Save the file, and close it
 - Back on Terminal, type ``reload`` which will update your machine with the changes
-- On Terminal, type ``touch_node`` + [file name], and you're all set!
+- On Terminal, type ``touch_node [file name]``, and you're all set!
 
-## What the script will create:
+## What the script will do:
+First, the script will create a file structure 
+
+Then, it will run the following commends on your Terminal:
+``npm init`` which will initialize npm in the directory created. Follow the questions asked
+and answer as need. Then, it will install the following packages to run Express and Nodemon:
+``npm install express --save``
+``npm install mustache-express --save``
+``npm install nodemon --save``
+
+## Extras
+Once sublime opens, head to Package.json. On line 6 for "scripts", add:
+``"start": "nodemon server/server.js"``
+This will allow you to start the server from your Terminal and run Nodemon by typing ``npm start``.
