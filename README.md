@@ -44,7 +44,7 @@ project
 
 Then, it will run the following commends on your Terminal:
 ``npm init`` which will initialize npm in the directory created. Follow the questions asked
-and answer as need. None of them are mandatory, and they can be edited later. 
+and answer as need. None of them are mandatory, and they can be edited later. <br>
 Then, it will install the following packages to run Express and Nodemon: <br>
 ``npm install express --save`` <br>
 ``npm install mustache-express --save`` <br>
