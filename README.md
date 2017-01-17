@@ -47,10 +47,10 @@ Then, it will run the following commends on your Terminal:
 and answer as need. None of them are mandatory, and they can be edited later. Then, it will install the following packages to run Express and Nodemon:
 ``npm install express --save`` <br>
 ``npm install mustache-express --save`` <br>
-``npm install nodemon --save`` <br>
+``npm install nodemon --save`` <br><br>
 Express is a package that will handle the server routing
 - It also handles asset serving.
-- Read more here: https://www.npmjs.com/package/express
+- Read more here: https://www.npmjs.com/package/express <br>
 Mustache is a template engine for HTML files and more
 - Read more about 'Usage' here: https://www.npmjs.com/package/mustache
 
