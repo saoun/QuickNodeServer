@@ -48,8 +48,7 @@ and answer as need. None of them are mandatory, and they can be edited later. Th
 ``npm install express --save`` <br>
 ``npm install mustache-express --save`` <br>
 ``npm install nodemon --save`` <br><br>
-Express is a package that will handle the server routing
-- It also handles asset serving.
+Express is a package that will handle the server routing and the asset serving
 - Read more here: https://www.npmjs.com/package/express <br>
 
 Mustache is a template engine for HTML files and more
