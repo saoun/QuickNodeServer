@@ -53,3 +53,4 @@ and answer as need. Then, it will install the following packages to run Express 
 Once sublime opens, head to Package.json. On line 6 for "scripts", add:
 ``"start": "nodemon server/server.js"``. <br>
 This will allow you to start the server from your Terminal and run Nodemon by typing ``npm start``.
+Visit your site on http://localhost:8080
