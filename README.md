@@ -44,18 +44,16 @@ project
 
 Then, it will run the following commends on your Terminal:
 ``npm init`` which will initialize npm in the directory created. Follow the questions asked
-and answer as need. None of them are mandatory, and they can be edited later. Then, it will install the following packages to run Express and Nodemon:
+and answer as need. None of them are mandatory, and they can be edited later. Then, it will install the following packages to run Express and Nodemon: <br>
 ``npm install express --save`` <br>
 ``npm install mustache-express --save`` <br>
 ``npm install nodemon --save`` <br><br>
-Express is a package that will handle the server routing and the asset serving
-- Read more here: https://www.npmjs.com/package/express <br>
+Express is a package that will handle the server routing and the asset serving. Read more here: https://www.npmjs.com/package/express <br>
 
-Mustache is a template engine for HTML files and more
-- Read more about 'Usage' here: https://www.npmjs.com/package/mustache
+Mustache is a template engine for HTML files and more. Read more about 'Usage' here: https://www.npmjs.com/package/mustache
 
 ## Extras
 Once sublime opens, head to Package.json. On line 6 for "scripts", add:
 ``"start": "nodemon server/server.js"``. <br>
-This will allow you to start the server from your Terminal and run Nodemon by typing ``npm start``.
+This will allow you to start the server from your Terminal and run Nodemon by typing ``npm start``.<br>
 Visit your site on http://localhost:8080
