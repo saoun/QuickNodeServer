@@ -6,7 +6,7 @@ This is a command line shortcut to set up a node server and associated directori
 
 - Open QuickNodeServer.sh
 - Select All, and Copy
-- Open Terminal on your Mac
+- Open Terminal 
 - Open your bash_profile (``subl ~/.bash_profile``)
 - Paste the code (anywhere, though best at the bottom)
 - Save the file, and close it
