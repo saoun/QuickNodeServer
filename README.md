@@ -11,7 +11,7 @@ This is a command line shortcut to set up a node server and associated directori
 - Paste the code (anywhere, though best at the bottom)
 - Save the file, and close it
 - Back on Terminal, type ``reload`` which will update your machine with the changes
-- On Terminal, type ``touch_node [file name]``, and you're all set!
+- On Terminal, type ``node_touch [file name]``, and you're all set!
 
 ## What the script will do:
 First, the script will create a directory and file structure.
