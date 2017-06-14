@@ -1,5 +1,4 @@
 function node_touch(){
-
   if [ "$#" -ne 1 ]
   then
     echo "You must provide a project name. Usage: 'node_touch [name]'"
@@ -27,7 +26,6 @@ function node_touch(){
           fi
 
           echo -e '"use strict";\n(function(){\n\n})();' > client/public/javascript/script.js
-
       printf  'var express = require("express");
 var app = express();
 var mustache = require("mustache-express");
