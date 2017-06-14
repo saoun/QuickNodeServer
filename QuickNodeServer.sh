@@ -3,10 +3,10 @@ function node_touch(){
   if [ "$#" -ne 1 ]
   then
     echo "You must provide a project name. Usage: 'node_touch [name]'"
-    exit 0
+    return
   fi
     mkdir $1
-    cd !$
+    cd $1
     mkdir client
       mkdir client/views
         echo -e '<!doctype html>\n<html>\n<head>\n  <link href="stylesheets/style.css" rel="stylesheet" type="text/css">\n</head>\n<body>\n  <div class="container">\n    "Hello World."\n  </div>\n</body>\n</html>\n<script src="javascript/jquery.js" type="text/javascript"></script>\n<script src="javascript/script.js" type="text/javascript"></script>' > client/views/index.html
