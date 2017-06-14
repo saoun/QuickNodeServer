@@ -6,11 +6,11 @@ This is a command line shortcut to set up a node server and associated directori
 
 - Open QuickNodeServer.sh
 - Select All, and Copy
-- Open Terminal 
+- Open Terminal
 - Open your bash_profile (``subl ~/.bash_profile``)
 - Paste the code (anywhere, though best at the bottom)
 - Save the file, and close it
-- Back on Terminal, type ``reload`` which will update your machine with the changes
+- Back on Terminal, type ``reload`` which will update your machine with the changes (or `source ~/.bash_profile` if that doesn't work)
 - On Terminal, type ``node_touch [file name]``, and you're all set!
 
 ## What the script will do:
