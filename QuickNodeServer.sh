@@ -26,8 +26,6 @@ function node_touch(){
           fi
 
           echo -e '"use strict";\n(function(){\n\n})();' > client/public/javascript/script.js
-    # mkdir server
-    mkdir server
       printf  'var express = require("express");
 var app = express();
 var mustache = require("mustache-express");
@@ -43,18 +41,21 @@ var port = 8080;
 //Define what happens then a user visits the root route
 app.get("/",function(req,res)
 {
-  res.render("index"); //Tell Express which html file to render for this route
+res.render("index"); //Tell Express which html file to render for this route
 });
 
 //Start the server on the defined port
 app.listen(port, function()
 {
   console.log("Server running on port: "+port);
-})' > server/index.js
+})' > index.js
 
     npm init
     npm install express --save
     npm install mustache-express --save
     npm install nodemon --save
+    npm install -g json # installs a global NPM package that will allow us to edit package.json easier
+    json -I -f package.json -e 'this.scripts.start = "nodemon index.js"' # adds start script to package.json
     subl . #change this line to your editor of choice.
+
 }
